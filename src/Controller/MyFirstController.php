@@ -13,15 +13,13 @@ class SuperController extends AbstractController
     public function index(): Response
     {
         $tab=[
-            'BLUE',
-            'BLACK',
-            'WHITE',
-            'YELLOW',
-
+            'PHP',
+            'CSS',
         ];
+
         return $this->render('my_first/index.html.twig', [
             'headerMessage' => 'My controller:',
-            'colors'=>'colors',
+            'name'=>'Julia',
             'tab'=>$tab,
         ]);
     }

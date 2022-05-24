@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Controller{% endblock %}
+
+{% block body %}
+    <head>
+
+        <style>
+            .example-wrapper { background: #ffffff; margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; border-top-width: 5px;   }
+.content{
+    border-style: dotted;
+}
+            p, h1 {
+                margin: 0px;
+                padding: 0px;
+            }
+            h1.page-header {
+                margin: 0;
+                padding: 0;
+            }
+
+
+        </style>
+    </head>
+
+
+<div class="wrapper">
+    <h1>   {{ hello }} </h1>
+
+<div class="content">
+    <ul>
+        <h1> {{ colors }}: <h1>
+        {%  for table in tab %}
+        <li>{{ table}} </li>
+        {%  endfor %}
+    </ul>
+</div>
+</div>
+{% endblock %}
